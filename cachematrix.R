@@ -38,8 +38,8 @@ cacheSolve <- function(x, ...) {
    mat <- x$get()
    inv <- solve(mat, ...)
    
-   # This setInverse function sets the inverse value in the cache.
+   # This setInverse function sets the computed inverse value in the cache.
    x$setInverse(inv)
    inv
-  }
+   }
     
